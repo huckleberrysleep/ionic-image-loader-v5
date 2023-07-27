@@ -404,6 +404,7 @@ export class ImageLoaderService {
                 done();
                 this.maintainCacheSize();
             } catch (err) {
+                console.log(err);
                 error(err);
                 throw err;
             }
